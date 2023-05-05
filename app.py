@@ -61,7 +61,7 @@ def index():
                     client = pymongo.MongoClient("mongodb+srv://khushi:khushi9015@cluster0.y5ojyf5.mongodb.net/?retryWrites=true&w=majority")
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
-                    review_col.insert_many(img_data)          
+                    review_col.insert_many(img_data)           
 
                     return "image laoded"
                 except Exception as e:
